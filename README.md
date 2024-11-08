@@ -15,16 +15,6 @@ Crear un CRUD a partir de la base datos de tienda.
 - EL costo de la venta deberá de calcularse apatir de los productos registrado en
   la venta.
 - El stock de la tabla producto se deberá de decrementar al realizar una venta.
-
-
-## Instalación
-
-Install my-project with npm
-
-```bash
-  npm install my-project
-  cd my-project
-```
   
 ## Notas
 - Como punto extra hacer una página web sencilla para la demostración del CRUD.
@@ -42,21 +32,24 @@ Install my-project with npm
 
 # Pasos:
 1. Instalar docker-compose: https://docs.docker.com/compose/install/#prerequisites
-2. Run command
+2. Ejecutar comando
 > docker-compose up
 
-3. Access the server at localhost:3000
+3. Acceder al servidor http://localhost:3000
 
 # Pasos (Sin Docker):
+En caso de tener problemas con Docker.
+
 Prerequisitos: maven, node
 
-Run Back:
+Run BackEnd:
 > cd egl_evaluacion_back
 > 
 > mvn spring-boot:run
 
-Run Front:
+Run FrontEnd:
 > cd egl_evaluacion_front
+> 
 > npm install
 > 
 > npm start

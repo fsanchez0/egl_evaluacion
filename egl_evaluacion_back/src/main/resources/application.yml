@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: "egl_evaluacion_back"
+
+  jpa:
+    open-in-view: false
+    show-sql: false
+
+  datasource:
+    url: 'jdbc:mysql://${MYSQL_HOST:localhost}:3306/Tienda'
+    username: 'tienda_db_user'
+    password: 'rUIr9RPHEQLJCIZz'
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+web:
+  cors:
+    allowed-origins: "http://localhost:3000"
+    allowed-methods: GET, POST, PATCH, PUT, DELETE, OPTIONS, HEAD
+    max-age: 3600
+    allowed-headers: Requestor-Type, Content-Type
+    exposed-headers: "X-Get-Header"

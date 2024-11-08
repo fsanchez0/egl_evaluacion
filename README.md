@@ -42,8 +42,30 @@ Install my-project with npm
 
 # Pasos:
 1. Instalar docker-compose: https://docs.docker.com/compose/install/#prerequisites
-2. Configurar conexion proxy via ssl.binghamton.edu (Pulse secure, Also add application.properties)
-3. Run command
+2. Run command
 > docker-compose up
 
-4. Access the server at localhost:3000
+3. Access the server at localhost:3000
+
+# Pasos (Sin Docker):
+Prerequisitos: maven, node
+
+Run Back:
+> cd egl_evaluacion_back
+> 
+> mvn spring-boot:run
+
+Run Front:
+> cd egl_evaluacion_front
+> npm install
+> 
+> npm start
+> 
+# Validar
+Abrir el navegador: http://localhost:3000
+
+Agregar Productos (Importante Stock > 0)
+
+Clic en Ventas -> Nueva venta -> Agregar productos y Clic en confirmar
+
+Verificar registros en base de datos.

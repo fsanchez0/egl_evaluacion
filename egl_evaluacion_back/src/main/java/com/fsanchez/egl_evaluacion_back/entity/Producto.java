@@ -2,14 +2,10 @@ package com.fsanchez.egl_evaluacion_back.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @Entity
-@Getter
-@Setter
 @SpringBootApplication
 @NoArgsConstructor
 @AllArgsConstructor
@@ -27,4 +23,35 @@ public class Producto {
 
     private Integer stock;
 
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Integer getCosto() {
+        return costo;
+    }
+
+    public void setCosto(Integer costo) {
+        this.costo = costo;
+    }
+
+    public Integer getStock() {
+        return stock;
+    }
+
+    public void setStock(Integer stock) {
+        this.stock = stock;
+    }
 }

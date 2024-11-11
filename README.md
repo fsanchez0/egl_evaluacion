@@ -31,8 +31,9 @@ Crear un CRUD a partir de la base datos de tienda.
 - Como validar el componente
 
 # Pasos:
-1. Instalar docker-compose: https://docs.docker.com/compose/install/#prerequisites
-2. Ejecutar comando
+1. Crear usuario/pwd para base de datos 'tienda_db_user' 'rUIr9RPHEQLJCIZz'
+2. Instalar docker-compose: https://docs.docker.com/compose/install/#prerequisites
+3. Ejecutar comando
 > docker-compose up
 
 3. Acceder al servidor http://localhost:3000
@@ -40,7 +41,7 @@ Crear un CRUD a partir de la base datos de tienda.
 # Pasos (Sin Docker):
 En caso de tener problemas con Docker.
 
-Prerequisitos: maven, node
+Prerequisitos: maven, node, crear usuario/pwd para base de datos 'tienda_db_user' 'rUIr9RPHEQLJCIZz'
 
 Run BackEnd:
 > cd egl_evaluacion_back
